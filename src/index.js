@@ -73,7 +73,7 @@ const sketch = () => {
 };
 
 const createPane = () => {
-  const pane = new Tweakpane.Pane();
+  const pane = new Tweakpane.Pane({ title: "Parameters" });
 
   const folGrid = pane.addFolder({ title: "Grid" });
   folGrid.addInput(params, "cols", { min: 2, max: 50, step: 1 });
